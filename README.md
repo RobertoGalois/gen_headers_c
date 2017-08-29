@@ -13,7 +13,8 @@ file2.c
 file1.h
 file2.h
 
-if file1.c is like that
+if file1.c is like that :
+```c
 #include    <stdio.h>
 
 int   ft_pouet(int a, char c)
@@ -27,12 +28,14 @@ struct s_yolo ft_prout(void)
        struct s_yolo ret;
        return (ret);
 }
+```
 
 Your generated file1.h file will be
-<code>
+```c
 #ifndef FILE1_H
  #define FILE1_H
  int   ft_pouet(int a, char c);
  struct s_yolo ft_prout(void);
 #endif
-</code>
+```
+
