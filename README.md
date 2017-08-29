@@ -29,8 +29,10 @@ struct s_yolo ft_prout(void)
 }
 
 Your generated file1.h file will be
+<code>
 #ifndef FILE1_H
  #define FILE1_H
  int   ft_pouet(int a, char c);
  struct s_yolo ft_prout(void);
 #endif
+</code>
