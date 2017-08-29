@@ -31,7 +31,7 @@ do
 	echo " #define $file_name" >> $file_h
 
 	#generate .h body text
-	cat $file_c | grep -x '^\([a-zA-Z_]\{1,\}[[:blank:]]\{1,\}\)\{1,\}[a-zA-Z_]\{1,\}(.\{1,\})' | cat -e | tr '$' ';' | sed 's/.*/ &/' >> $file_h
+	cat $file_c | grep -x '^\([a-zA-Z_*]\{1,\}[[:blank:]]\{1,\}\)\{1,\}[a-zA-Z_]\{1,\}(.\{1,\})' | cat -e | tr '$' ';' | sed 's/.*/ &/' >> $file_h
 	
 
 	#generate .h footer text
